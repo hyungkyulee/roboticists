@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{EBB6A4AF-A4CC-48F0-A342-641E34C8A546}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="API/appsettings.json">
+    <Files>
+      <File FileName="Persistence/DataContext.cs" Line="15" Column="45" />
+      <File FileName="API/Startup.cs" />
+      <File FileName="API/appsettings.json" Line="8" Column="29" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="roboticists" expanded="True">
+            <Node name="API" expanded="True">
+              <Node name="appsettings.json" selected="True" />
+            </Node>
+            <Node name="Persistence" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

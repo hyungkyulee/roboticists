@@ -1,0 +1,11 @@
+/Users/albert/_dev/_web/roboticists/Persistence/bin/Debug/netstandard2.0/Persistence.deps.json
+/Users/albert/_dev/_web/roboticists/Persistence/bin/Debug/netstandard2.0/Persistence.dll
+/Users/albert/_dev/_web/roboticists/Persistence/bin/Debug/netstandard2.0/Persistence.pdb
+/Users/albert/_dev/_web/roboticists/Persistence/bin/Debug/netstandard2.0/Domain.dll
+/Users/albert/_dev/_web/roboticists/Persistence/bin/Debug/netstandard2.0/Domain.pdb
+/Users/albert/_dev/_web/roboticists/Persistence/obj/Debug/netstandard2.0/Persistence.csprojAssemblyReference.cache
+/Users/albert/_dev/_web/roboticists/Persistence/obj/Debug/netstandard2.0/Persistence.AssemblyInfoInputs.cache
+/Users/albert/_dev/_web/roboticists/Persistence/obj/Debug/netstandard2.0/Persistence.AssemblyInfo.cs
+/Users/albert/_dev/_web/roboticists/Persistence/obj/Debug/netstandard2.0/Persistence.csproj.CopyComplete
+/Users/albert/_dev/_web/roboticists/Persistence/obj/Debug/netstandard2.0/Persistence.dll
+/Users/albert/_dev/_web/roboticists/Persistence/obj/Debug/netstandard2.0/Persistence.pdb
