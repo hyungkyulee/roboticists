@@ -25,6 +25,7 @@ namespace API
                 {
                     var context = services.GetRequiredService<DataContext>();
                     context.Database.Migrate();
+                    Inject.InjectPlayerData(context);
                 }
                 catch (Exception err)
                 {

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/albert/_dev/_web/roboticists/Application/Application.csproj": {}
+    "/Users/albert/_dev/_web/roboleague/Application/Application.csproj": {}
   },
   "projects": {
-    "/Users/albert/_dev/_web/roboticists/Application/Application.csproj": {
+    "/Users/albert/_dev/_web/roboleague/Application/Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/albert/_dev/_web/roboticists/Application/Application.csproj",
+        "projectUniqueName": "/Users/albert/_dev/_web/roboleague/Application/Application.csproj",
         "projectName": "Application",
-        "projectPath": "/Users/albert/_dev/_web/roboticists/Application/Application.csproj",
+        "projectPath": "/Users/albert/_dev/_web/roboleague/Application/Application.csproj",
         "packagesPath": "/Users/albert/.nuget/packages/",
-        "outputPath": "/Users/albert/_dev/_web/roboticists/Application/obj/",
+        "outputPath": "/Users/albert/_dev/_web/roboleague/Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/albert/.nuget/NuGet/NuGet.Config"
@@ -25,11 +25,11 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "/Users/albert/_dev/_web/roboticists/Domain/Domain.csproj": {
-                "projectPath": "/Users/albert/_dev/_web/roboticists/Domain/Domain.csproj"
+              "/Users/albert/_dev/_web/roboleague/Domain/Domain.csproj": {
+                "projectPath": "/Users/albert/_dev/_web/roboleague/Domain/Domain.csproj"
               },
-              "/Users/albert/_dev/_web/roboticists/Persistence/Persistence.csproj": {
-                "projectPath": "/Users/albert/_dev/_web/roboticists/Persistence/Persistence.csproj"
+              "/Users/albert/_dev/_web/roboleague/Persistence/Persistence.csproj": {
+                "projectPath": "/Users/albert/_dev/_web/roboleague/Persistence/Persistence.csproj"
               }
             }
           }
@@ -43,6 +43,10 @@
       "frameworks": {
         "netstandard2.1": {
           "dependencies": {
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.2, )"
@@ -71,14 +75,14 @@
         }
       }
     },
-    "/Users/albert/_dev/_web/roboticists/Domain/Domain.csproj": {
+    "/Users/albert/_dev/_web/roboleague/Domain/Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/albert/_dev/_web/roboticists/Domain/Domain.csproj",
+        "projectUniqueName": "/Users/albert/_dev/_web/roboleague/Domain/Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "/Users/albert/_dev/_web/roboticists/Domain/Domain.csproj",
+        "projectPath": "/Users/albert/_dev/_web/roboleague/Domain/Domain.csproj",
         "packagesPath": "/Users/albert/.nuget/packages/",
-        "outputPath": "/Users/albert/_dev/_web/roboticists/Domain/obj/",
+        "outputPath": "/Users/albert/_dev/_web/roboleague/Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/albert/.nuget/NuGet/NuGet.Config"
@@ -131,14 +135,14 @@
         }
       }
     },
-    "/Users/albert/_dev/_web/roboticists/Persistence/Persistence.csproj": {
+    "/Users/albert/_dev/_web/roboleague/Persistence/Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/albert/_dev/_web/roboticists/Persistence/Persistence.csproj",
+        "projectUniqueName": "/Users/albert/_dev/_web/roboleague/Persistence/Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "/Users/albert/_dev/_web/roboticists/Persistence/Persistence.csproj",
+        "projectPath": "/Users/albert/_dev/_web/roboleague/Persistence/Persistence.csproj",
         "packagesPath": "/Users/albert/.nuget/packages/",
-        "outputPath": "/Users/albert/_dev/_web/roboticists/Persistence/obj/",
+        "outputPath": "/Users/albert/_dev/_web/roboleague/Persistence/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/albert/.nuget/NuGet/NuGet.Config"
@@ -152,8 +156,8 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "/Users/albert/_dev/_web/roboticists/Domain/Domain.csproj": {
-                "projectPath": "/Users/albert/_dev/_web/roboticists/Domain/Domain.csproj"
+              "/Users/albert/_dev/_web/roboleague/Domain/Domain.csproj": {
+                "projectPath": "/Users/albert/_dev/_web/roboleague/Domain/Domain.csproj"
               }
             }
           }

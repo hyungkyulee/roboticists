@@ -9,3 +9,14 @@
 /Users/albert/_dev/_web/roboticists/Persistence/obj/Debug/netstandard2.1/Persistence.csproj.CopyComplete
 /Users/albert/_dev/_web/roboticists/Persistence/obj/Debug/netstandard2.1/Persistence.dll
 /Users/albert/_dev/_web/roboticists/Persistence/obj/Debug/netstandard2.1/Persistence.pdb
+/Users/albert/_dev/_web/roboleague/Persistence/bin/Debug/netstandard2.1/Persistence.deps.json
+/Users/albert/_dev/_web/roboleague/Persistence/bin/Debug/netstandard2.1/Persistence.dll
+/Users/albert/_dev/_web/roboleague/Persistence/bin/Debug/netstandard2.1/Persistence.pdb
+/Users/albert/_dev/_web/roboleague/Persistence/bin/Debug/netstandard2.1/Domain.dll
+/Users/albert/_dev/_web/roboleague/Persistence/bin/Debug/netstandard2.1/Domain.pdb
+/Users/albert/_dev/_web/roboleague/Persistence/obj/Debug/netstandard2.1/Persistence.csprojAssemblyReference.cache
+/Users/albert/_dev/_web/roboleague/Persistence/obj/Debug/netstandard2.1/Persistence.AssemblyInfoInputs.cache
+/Users/albert/_dev/_web/roboleague/Persistence/obj/Debug/netstandard2.1/Persistence.AssemblyInfo.cs
+/Users/albert/_dev/_web/roboleague/Persistence/obj/Debug/netstandard2.1/Persistence.csproj.CopyComplete
+/Users/albert/_dev/_web/roboleague/Persistence/obj/Debug/netstandard2.1/Persistence.dll
+/Users/albert/_dev/_web/roboleague/Persistence/obj/Debug/netstandard2.1/Persistence.pdb

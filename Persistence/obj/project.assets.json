@@ -1292,11 +1292,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/albert/_dev/_web/roboticists/Persistence/Persistence.csproj",
+      "projectUniqueName": "/Users/albert/_dev/_web/roboleague/Persistence/Persistence.csproj",
       "projectName": "Persistence",
-      "projectPath": "/Users/albert/_dev/_web/roboticists/Persistence/Persistence.csproj",
+      "projectPath": "/Users/albert/_dev/_web/roboleague/Persistence/Persistence.csproj",
       "packagesPath": "/Users/albert/.nuget/packages/",
-      "outputPath": "/Users/albert/_dev/_web/roboticists/Persistence/obj/",
+      "outputPath": "/Users/albert/_dev/_web/roboleague/Persistence/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/albert/.nuget/NuGet/NuGet.Config"
@@ -1310,8 +1310,8 @@
       "frameworks": {
         "netstandard2.1": {
           "projectReferences": {
-            "/Users/albert/_dev/_web/roboticists/Domain/Domain.csproj": {
-              "projectPath": "/Users/albert/_dev/_web/roboticists/Domain/Domain.csproj"
+            "/Users/albert/_dev/_web/roboleague/Domain/Domain.csproj": {
+              "projectPath": "/Users/albert/_dev/_web/roboleague/Domain/Domain.csproj"
             }
           }
         }
