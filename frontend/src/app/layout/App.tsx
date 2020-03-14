@@ -1,19 +1,19 @@
 import React, {Component} from 'react';
 import { Header, Icon, List } from 'semantic-ui-react'
-import './App.css';
+import './styles.css';
 import axios from 'axios';
 
 class App extends Component {
   state = {
-    values: [],
+    players: [],
   }
 
   componentDidMount() {
-    axios.get('http://localhost:5000/api/values')
+    axios.get('http://localhost:5000/api/players')
       .then(res => {
         console.log(res)  
         this.setState({
-          values: res.data,
+          players: res.data,
         })
     })
 
@@ -24,12 +24,12 @@ class App extends Component {
       <div>
         <Header as='h2'>
           <Icon name='puzzle' />
-          <Header.Content>Roboticists Network</Header.Content>
+          <Header.Content>Robot Premier League - Base Station</Header.Content>
         </Header>
 
         <List>
-          {this.state.values.map((value: any) => (
-            <List.Item key={value.id}>{value.name}</List.Item>
+          {this.state.players.map((player: any) => (
+            <List.Item key={player.id}>{player.name}</List.Item>
           ))}
         </List>
       </div>
