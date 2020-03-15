@@ -2,14 +2,18 @@ import React, {Component} from 'react';
 import { Header, Icon, List } from 'semantic-ui-react'
 import './styles.css';
 import axios from 'axios';
+import { IPlayer } from '../../models/player';
 
-class App extends Component {
-  state = {
+interface IState {
+  players: IPlayer[] 
+}
+class App extends Component<{}, IState> {
+  state: IState = {
     players: [],
   }
 
   componentDidMount() {
-    axios.get('http://localhost:5000/api/players')
+    axios.get<IPlayer[]>('http://localhost:5000/api/players')
       .then(res => {
         console.log(res)  
         this.setState({
@@ -28,7 +32,7 @@ class App extends Component {
         </Header>
 
         <List>
-          {this.state.players.map((player: any) => (
+          {this.state.players.map((player) => (
             <List.Item key={player.id}>{player.name}</List.Item>
           ))}
         </List>
