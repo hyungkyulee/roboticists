@@ -1,8 +1,10 @@
-import React, {useState, useEffect} from 'react';
-import { Header, Icon, List } from 'semantic-ui-react'
+import React, {useState, useEffect, Fragment} from 'react';
+import { Header, Icon, List, Container } from 'semantic-ui-react'
 import './styles.css';
 import axios from 'axios';
 import { IPlayer } from '../../models/player';
+import { NavBar } from '../../features/nav/NavBar';
+import PlayerDashboard from '../../features/players/dashboard/PlayerDashboard';
 
 const App = () => {
 
@@ -16,18 +18,12 @@ const App = () => {
   }, []);
 
   return (
-    <div>
-      <Header as='h2'>
-        <Icon name='puzzle' />
-        <Header.Content>Robot Premier League - Base Station</Header.Content>
-      </Header>
-
-      <List>
-        {players.map((player) => (
-          <List.Item key={player.id}>{player.name}</List.Item>
-        ))}
-      </List>
-    </div>
+    <Fragment>
+      <NavBar />
+      <Container style={{marginTop: '100px'}}>
+        <PlayerDashboard players={players} />
+      </Container>
+    </Fragment>
   );
 }
 
