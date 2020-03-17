@@ -9,6 +9,11 @@ import PlayerDashboard from '../../features/players/dashboard/PlayerDashboard';
 const App = () => {
 
   const [players, setPlayers] = useState<IPlayer[]>([]);
+  const [selectedPlayer, setSelectedPlayer] = useState<IPlayer | null>(null);
+
+  const handleSelectPlayer = (id: string) => {
+    setSelectedPlayer(players.filter(x => x.id === id)[0])
+  }
 
   useEffect(() => {
     axios.get<IPlayer[]>('http://localhost:5000/api/players')
@@ -21,7 +26,9 @@ const App = () => {
     <Fragment>
       <NavBar />
       <Container style={{marginTop: '100px'}}>
-        <PlayerDashboard players={players} />
+        <PlayerDashboard players={players} 
+                          selectPlayer={handleSelectPlayer}
+                          selectedPlayer={selectedPlayer} />
       </Container>
     </Fragment>
   );

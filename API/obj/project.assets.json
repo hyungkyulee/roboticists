@@ -1255,31 +1255,38 @@
     ]
   },
   "packageFolders": {
-    "/Users/albert/.nuget/packages/": {}
+    "C:\\Users\\hyungkyu.lee\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/albert/_dev/_web/roboleague/API/API.csproj",
+      "projectUniqueName": "C:\\_dev\\_web\\roboleague\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "/Users/albert/_dev/_web/roboleague/API/API.csproj",
-      "packagesPath": "/Users/albert/.nuget/packages/",
-      "outputPath": "/Users/albert/_dev/_web/roboleague/API/obj/",
+      "projectPath": "C:\\_dev\\_web\\roboleague\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\hyungkyu.lee\\.nuget\\packages\\",
+      "outputPath": "C:\\_dev\\_web\\roboleague\\API\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "/Users/albert/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\hyungkyu.lee\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "/Users/albert/_dev/_web/roboleague/Application/Application.csproj": {
-              "projectPath": "/Users/albert/_dev/_web/roboleague/Application/Application.csproj"
+            "C:\\_dev\\_web\\roboleague\\Application\\Application.csproj": {
+              "projectPath": "C:\\_dev\\_web\\roboleague\\Application\\Application.csproj"
             }
           }
         }
@@ -1326,7 +1333,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.102/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

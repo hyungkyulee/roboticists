@@ -6,19 +6,21 @@ import PlayerStats from './PlayerStats';
 import PlayerForm from '../form/PlayerForm';
 
 interface IProps {
-  players: IPlayer[]
+  players: IPlayer[];
+  selectPlayer: (id: string) => void;
+  selectedPlayer: IPlayer | null;
 }
 
 const PlayerDashboard: React.FC<IProps> = (props) => {
-  const {players} = props;
+  const {players, selectPlayer, selectedPlayer} = props;
 
   return (
     <Grid>
       <Grid.Column width={10}>
-        <PlayerList players={players}/>
+        <PlayerList players={players} selectPlayer={selectPlayer} />
       </Grid.Column>
       <Grid.Column width={6}>
-        <PlayerStats players={players}/>
+        <PlayerStats player={selectedPlayer!}/>
         <PlayerForm />
       </Grid.Column>
     </Grid>

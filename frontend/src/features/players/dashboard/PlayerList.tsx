@@ -3,11 +3,12 @@ import { Item, Statistic, Button, Label, Segment } from 'semantic-ui-react'
 import { IPlayer } from '../../../models/player'
 
 interface IProps {
-  players: IPlayer[]
+  players: IPlayer[];
+  selectPlayer: (id: string) => void;
 }
 
 const PlayerList: React.FC<IProps> = (props) => {
-  const {players} = props;
+  const {players, selectPlayer} = props;
 
   return (
     <Segment clearing>
@@ -49,7 +50,9 @@ const PlayerList: React.FC<IProps> = (props) => {
                   </Statistic.Group>
                 </Item.Description>
                 <Item.Extra>
-                  <Button floated='right' content='view' color='blue' />
+                  <Button 
+                    onClick={() => selectPlayer(player.id)}
+                    floated='right' content='view' color='blue' />
                   <Label basic content={player.club} />
                 </Item.Extra>
               </Item.Content>

@@ -1356,34 +1356,41 @@
     ]
   },
   "packageFolders": {
-    "/Users/albert/.nuget/packages/": {}
+    "C:\\Users\\hyungkyu.lee\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/albert/_dev/_web/roboleague/Application/Application.csproj",
+      "projectUniqueName": "C:\\_dev\\_web\\roboleague\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "/Users/albert/_dev/_web/roboleague/Application/Application.csproj",
-      "packagesPath": "/Users/albert/.nuget/packages/",
-      "outputPath": "/Users/albert/_dev/_web/roboleague/Application/obj/",
+      "projectPath": "C:\\_dev\\_web\\roboleague\\Application\\Application.csproj",
+      "packagesPath": "C:\\Users\\hyungkyu.lee\\.nuget\\packages\\",
+      "outputPath": "C:\\_dev\\_web\\roboleague\\Application\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "/Users/albert/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\hyungkyu.lee\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netstandard2.1": {
           "projectReferences": {
-            "/Users/albert/_dev/_web/roboleague/Domain/Domain.csproj": {
-              "projectPath": "/Users/albert/_dev/_web/roboleague/Domain/Domain.csproj"
+            "C:\\_dev\\_web\\roboleague\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\_dev\\_web\\roboleague\\Domain\\Domain.csproj"
             },
-            "/Users/albert/_dev/_web/roboleague/Persistence/Persistence.csproj": {
-              "projectPath": "/Users/albert/_dev/_web/roboleague/Persistence/Persistence.csproj"
+            "C:\\_dev\\_web\\roboleague\\Persistence\\Persistence.csproj": {
+              "projectPath": "C:\\_dev\\_web\\roboleague\\Persistence\\Persistence.csproj"
             }
           }
         }
@@ -1425,7 +1432,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.102/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

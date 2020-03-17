@@ -11,7 +11,7 @@ namespace Domain
         public int Goals { get; set; }
         public int Saves { get; set; }
         public int Shoots { get; set; }
-        public int Tackles { get; set; }    
+        public int Tackles { get; set; }
         public int YellowCards { get; set; }
         public int RedCards { get; set; }
         public DateTime DebutDate { get; set; }

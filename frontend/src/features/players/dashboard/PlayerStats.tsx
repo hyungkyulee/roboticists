@@ -3,19 +3,19 @@ import { Card, Icon, Image, Button } from 'semantic-ui-react'
 import { IPlayer } from '../../../models/player'
 
 interface IProps {
-  players: IPlayer[]
+  player: IPlayer;
 }
 
 const PlayerStats: React.FC<IProps> = (props) => {
-  const {players} = props;
+  const {player} = props;
 
   return (
     <Card>
       <Image src='/assets/images/matthew.png' wrapped ui={false} />
       <Card.Content>
-        <Card.Header>Matthew</Card.Header>
+        <Card.Header>player.name</Card.Header>
         <Card.Meta>
-          <span className='date'>Joined in 2015</span>
+          <span className='date'>player.debutDate</span>
         </Card.Meta>
         <Card.Description>
           Matthew is a musician living in Nashville.
