@@ -24,16 +24,3 @@
 /Users/albert/_dev/_web/roboleague/Application/obj/Debug/netstandard2.1/Application.csproj.CopyComplete
 /Users/albert/_dev/_web/roboleague/Application/obj/Debug/netstandard2.1/Application.dll
 /Users/albert/_dev/_web/roboleague/Application/obj/Debug/netstandard2.1/Application.pdb
-C:\_dev\_web\roboleague\Application\bin\Debug\netstandard2.1\Application.deps.json
-C:\_dev\_web\roboleague\Application\bin\Debug\netstandard2.1\Application.dll
-C:\_dev\_web\roboleague\Application\bin\Debug\netstandard2.1\Application.pdb
-C:\_dev\_web\roboleague\Application\bin\Debug\netstandard2.1\Domain.dll
-C:\_dev\_web\roboleague\Application\bin\Debug\netstandard2.1\Persistence.dll
-C:\_dev\_web\roboleague\Application\bin\Debug\netstandard2.1\Domain.pdb
-C:\_dev\_web\roboleague\Application\bin\Debug\netstandard2.1\Persistence.pdb
-C:\_dev\_web\roboleague\Application\obj\Debug\netstandard2.1\Application.csprojAssemblyReference.cache
-C:\_dev\_web\roboleague\Application\obj\Debug\netstandard2.1\Application.AssemblyInfoInputs.cache
-C:\_dev\_web\roboleague\Application\obj\Debug\netstandard2.1\Application.AssemblyInfo.cs
-C:\_dev\_web\roboleague\Application\obj\Debug\netstandard2.1\Application.csproj.CopyComplete
-C:\_dev\_web\roboleague\Application\obj\Debug\netstandard2.1\Application.dll
-C:\_dev\_web\roboleague\Application\obj\Debug\netstandard2.1\Application.pdb

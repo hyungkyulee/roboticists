@@ -10,6 +10,7 @@ const App = () => {
 
   const [players, setPlayers] = useState<IPlayer[]>([]);
   const [selectedPlayer, setSelectedPlayer] = useState<IPlayer | null>(null);
+  const [editMode, setEditMode] = useState(false);
 
   const handleSelectPlayer = (id: string) => {
     setSelectedPlayer(players.filter(x => x.id === id)[0])
@@ -26,9 +27,11 @@ const App = () => {
     <Fragment>
       <NavBar />
       <Container style={{marginTop: '100px'}}>
-        <PlayerDashboard players={players} 
+        <PlayerDashboard players={players}
                           selectPlayer={handleSelectPlayer}
-                          selectedPlayer={selectedPlayer} />
+                          selectedPlayer={selectedPlayer}
+                          editMode={editMode}
+                          setEditMode={setEditMode} />
       </Container>
     </Fragment>
   );

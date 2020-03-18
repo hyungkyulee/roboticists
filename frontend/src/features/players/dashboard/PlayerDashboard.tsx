@@ -9,19 +9,25 @@ interface IProps {
   players: IPlayer[];
   selectPlayer: (id: string) => void;
   selectedPlayer: IPlayer | null;
+  editMode: boolean;
+  setEditMode: (editMode: boolean) => void;
 }
 
 const PlayerDashboard: React.FC<IProps> = (props) => {
-  const {players, selectPlayer, selectedPlayer} = props;
+  const {players, selectPlayer, selectedPlayer, editMode, setEditMode} = props;
 
   return (
     <Grid>
       <Grid.Column width={10}>
-        <PlayerList players={players} selectPlayer={selectPlayer} />
+        <PlayerList players={players} selectPlayer={selectPlayer} setEditMode={setEditMode} />
       </Grid.Column>
       <Grid.Column width={6}>
-        <PlayerStats player={selectedPlayer!}/>
-        <PlayerForm />
+        {
+          (selectedPlayer && !editMode) && <PlayerStats player={selectedPlayer} setEditMode={setEditMode} />
+        }
+        {
+          (editMode) && <PlayerForm />
+        }
       </Grid.Column>
     </Grid>
   )
