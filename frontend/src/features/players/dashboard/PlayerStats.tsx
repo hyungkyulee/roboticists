@@ -4,16 +4,17 @@ import { IPlayer } from '../../../models/player'
 
 interface IProps {
   player: IPlayer;
+  setEditMode: (editMode: boolean) => void;
 }
 
 const PlayerStats: React.FC<IProps> = (props) => {
-  const {player} = props;
+  const {player, setEditMode} = props;
 
   return (
     <Card>
-      <Image src='/assets/images/matthew.png' wrapped ui={false} />
+      <Image src={`/assets/images/players/${player.name.replace(/\s/g,"")}.jpg`} wrapped ui={false} />
       <Card.Content>
-        <Card.Header>player.name</Card.Header>
+        <Card.Header>{player.name}</Card.Header>
         <Card.Meta>
           <span className='date'>player.debutDate</span>
         </Card.Meta>
@@ -23,7 +24,7 @@ const PlayerStats: React.FC<IProps> = (props) => {
       </Card.Content>
       <Card.Content extra>
         <Button.Group widths={2}>
-          <Button basic color='olive' content='Edit' />
+          <Button onClink={() => setEditMode(true)} basic color='olive' content='Edit' />
           <Button basic color='grey' content='Delete' />
         </Button.Group>
       </Card.Content>

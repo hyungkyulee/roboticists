@@ -5,10 +5,11 @@ import { IPlayer } from '../../../models/player'
 interface IProps {
   players: IPlayer[];
   selectPlayer: (id: string) => void;
+  setEditMode: (editMode:boolean) => void;
 }
 
 const PlayerList: React.FC<IProps> = (props) => {
-  const {players, selectPlayer} = props;
+  const {players, selectPlayer, setEditMode} = props;
 
   return (
     <Segment clearing>
@@ -51,7 +52,7 @@ const PlayerList: React.FC<IProps> = (props) => {
                 </Item.Description>
                 <Item.Extra>
                   <Button 
-                    onClick={() => selectPlayer(player.id)}
+                    onClick={() => {selectPlayer(player.id); setEditMode(false);}}
                     floated='right' content='view' color='blue' />
                   <Label basic content={player.club} />
                 </Item.Extra>
