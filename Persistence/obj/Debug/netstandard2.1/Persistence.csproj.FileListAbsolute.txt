@@ -20,14 +20,3 @@
 /Users/albert/_dev/_web/roboleague/Persistence/obj/Debug/netstandard2.1/Persistence.csproj.CopyComplete
 /Users/albert/_dev/_web/roboleague/Persistence/obj/Debug/netstandard2.1/Persistence.dll
 /Users/albert/_dev/_web/roboleague/Persistence/obj/Debug/netstandard2.1/Persistence.pdb
-C:\_dev\_web\roboleague\Persistence\bin\Debug\netstandard2.1\Persistence.deps.json
-C:\_dev\_web\roboleague\Persistence\bin\Debug\netstandard2.1\Persistence.dll
-C:\_dev\_web\roboleague\Persistence\bin\Debug\netstandard2.1\Persistence.pdb
-C:\_dev\_web\roboleague\Persistence\bin\Debug\netstandard2.1\Domain.dll
-C:\_dev\_web\roboleague\Persistence\bin\Debug\netstandard2.1\Domain.pdb
-C:\_dev\_web\roboleague\Persistence\obj\Debug\netstandard2.1\Persistence.csprojAssemblyReference.cache
-C:\_dev\_web\roboleague\Persistence\obj\Debug\netstandard2.1\Persistence.AssemblyInfoInputs.cache
-C:\_dev\_web\roboleague\Persistence\obj\Debug\netstandard2.1\Persistence.AssemblyInfo.cs
-C:\_dev\_web\roboleague\Persistence\obj\Debug\netstandard2.1\Persistence.csproj.CopyComplete
-C:\_dev\_web\roboleague\Persistence\obj\Debug\netstandard2.1\Persistence.dll
-C:\_dev\_web\roboleague\Persistence\obj\Debug\netstandard2.1\Persistence.pdb

@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/Users/albert/_dev/_web/roboleague/Domain/Domain.csproj": {}
+    "C:\\_dev\\_web\\roboleague\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "/Users/albert/_dev/_web/roboleague/Domain/Domain.csproj": {
+    "C:\\_dev\\_web\\roboleague\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/albert/_dev/_web/roboleague/Domain/Domain.csproj",
+        "projectUniqueName": "C:\\_dev\\_web\\roboleague\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "/Users/albert/_dev/_web/roboleague/Domain/Domain.csproj",
-        "packagesPath": "/Users/albert/.nuget/packages/",
-        "outputPath": "/Users/albert/_dev/_web/roboleague/Domain/obj/",
+        "projectPath": "C:\\_dev\\_web\\roboleague\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\hyungkyu.lee\\.nuget\\packages\\",
+        "outputPath": "C:\\_dev\\_web\\roboleague\\Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "/Users/albert/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\hyungkyu.lee\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -60,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.102/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
