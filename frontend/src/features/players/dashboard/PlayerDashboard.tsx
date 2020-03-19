@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, List } from 'semantic-ui-react'
+import { Grid } from 'semantic-ui-react'
 import { IPlayer } from '../../../models/player';
 import PlayerList from './PlayerList';
 import PlayerStats from './PlayerStats';
@@ -11,10 +11,11 @@ interface IProps {
   selectedPlayer: IPlayer | null;
   editMode: boolean;
   setEditMode: (editMode: boolean) => void;
+  setSelectedPlayer: (player: IPlayer | null) => void;
 }
 
 const PlayerDashboard: React.FC<IProps> = (props) => {
-  const {players, selectPlayer, selectedPlayer, editMode, setEditMode} = props;
+  const {players, selectPlayer, selectedPlayer, editMode, setEditMode, setSelectedPlayer} = props;
 
   return (
     <Grid>
@@ -23,10 +24,14 @@ const PlayerDashboard: React.FC<IProps> = (props) => {
       </Grid.Column>
       <Grid.Column width={6}>
         {
-          (selectedPlayer && !editMode) && <PlayerStats player={selectedPlayer} setEditMode={setEditMode} />
+          selectedPlayer && !editMode && 
+          <PlayerStats 
+            player={selectedPlayer} 
+            setEditMode={setEditMode}
+            setSelectedPlayer={setSelectedPlayer} />
         }
         {
-          (editMode) && <PlayerForm />
+          (editMode) && <PlayerForm setEditMode={setEditMode} player={selectedPlayer!} />
         }
       </Grid.Column>
     </Grid>

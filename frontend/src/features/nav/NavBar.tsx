@@ -1,7 +1,13 @@
 import React from 'react'
 import { Menu, Button, Container, Icon } from 'semantic-ui-react'
 
-export const NavBar = () => {
+interface IProps {
+  joinPlayer: () => void;
+}
+
+export const NavBar: React.FC<IProps> = (props) => {
+  const {joinPlayer} = props;
+
   return (
   <Menu fixed='top' inverted>
     <Container>
@@ -12,7 +18,7 @@ export const NavBar = () => {
       </Menu.Item>
       <Menu.Item name='Players' />
       <Menu.Item>
-        <Button positive content='Join Player' />
+        <Button onClick={() => joinPlayer()} positive content='Join Player' />
       </Menu.Item>
     </Container>
   </Menu>

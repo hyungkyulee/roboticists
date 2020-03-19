@@ -1,5 +1,5 @@
 import React, {useState, useEffect, Fragment} from 'react';
-import { Header, Icon, List, Container } from 'semantic-ui-react'
+import { Container } from 'semantic-ui-react'
 import './styles.css';
 import axios from 'axios';
 import { IPlayer } from '../../models/player';
@@ -16,6 +16,11 @@ const App = () => {
     setSelectedPlayer(players.filter(x => x.id === id)[0])
   }
 
+  const handleJoinPlayer = () => {
+    setSelectedPlayer(null)
+    setEditMode(true)
+  }
+
   useEffect(() => {
     axios.get<IPlayer[]>('http://localhost:5000/api/players')
       .then(res => {
@@ -25,13 +30,14 @@ const App = () => {
 
   return (
     <Fragment>
-      <NavBar />
+      <NavBar joinPlayer={handleJoinPlayer} />
       <Container style={{marginTop: '100px'}}>
         <PlayerDashboard players={players}
                           selectPlayer={handleSelectPlayer}
                           selectedPlayer={selectedPlayer}
                           editMode={editMode}
-                          setEditMode={setEditMode} />
+                          setEditMode={setEditMode}
+                          setSelectedPlayer={setSelectedPlayer} />
       </Container>
     </Fragment>
   );
