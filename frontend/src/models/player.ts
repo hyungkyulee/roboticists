@@ -9,6 +9,6 @@ export interface IPlayer {
     tackles: number;
     yellowCards: number;
     redCards: number;
-    debutDate: Date;
+    debutDate: string;
     club: string;
 }

@@ -17,8 +17,8 @@ const App = () => {
   }
 
   const handleJoinPlayer = () => {
-    setSelectedPlayer(null)
-    setEditMode(true)
+    setSelectedPlayer(null);
+    setEditMode(true);
   }
 
   useEffect(() => {

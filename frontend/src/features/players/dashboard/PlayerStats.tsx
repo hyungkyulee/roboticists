@@ -51,8 +51,8 @@ const PlayerStats: React.FC<IProps> = (props) => {
       </Card.Content>
       <Card.Content extra>
         <Button.Group widths={2}>
-          <Button onClick={() => setEditMode(true)} basic color='olive' content='Edit' />
-          <Button onClick={() => setSelectedPlayer(null)} basic color='grey' content='Cancel' />
+          <Button onClick={() => setEditMode(true)} color='teal' content='Edit' />
+          <Button onClick={() => setSelectedPlayer(null)} color='grey' content='Cancel' />
         </Button.Group>
       </Card.Content>
     </Card>

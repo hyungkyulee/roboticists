@@ -23,13 +23,15 @@ const PlayerForm: React.FC<IProps> = (props) => {
         saves: 0,
         shoots: 0,
         tackles: 0,
+        yellowCards: 0,
+        redCards: 0,
         debutDate: '',
         club: '' 
       };
     }
   }
 
-  const [player, setPlayer] = useState<IPlayer>(initPlayer);
+  const [player, setPlayer] = useState<IPlayer>(initialiseForm);
 
   const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
     const {name, value} = event.target;
@@ -52,8 +54,8 @@ const PlayerForm: React.FC<IProps> = (props) => {
         <Form.Input onChange={handleInputChange} placeholder='Debut Date' name='debutDate' value={player.debutDate} />
         <Form.Input onChange={handleInputChange} placeholder='Club' name='club' value={player.club} />
         <Button.Group widths={2}>
-          <Button onClick={() => setEditMode(false)} basic color='grey' content='Cancel' />
-          <Button onClick={() => setEditMode(false)} basic color='blue' content='Submit' />
+          <Button onClick={() => setEditMode(false)} floated='right' positive type='submit' color='olive' content='Submit' />
+          <Button onClick={() => setEditMode(false)} floated='right' type='button' color='grey' content='Cancel' />
         </Button.Group>
       </Form>
     </Segment>
