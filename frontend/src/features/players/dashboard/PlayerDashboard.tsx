@@ -4,6 +4,7 @@ import { IPlayer } from '../../../models/player';
 import PlayerList from './PlayerList';
 import PlayerStats from './PlayerStats';
 import PlayerForm from '../form/PlayerForm';
+import { create } from 'domain';
 
 interface IProps {
   players: IPlayer[];
@@ -12,15 +13,21 @@ interface IProps {
   editMode: boolean;
   setEditMode: (editMode: boolean) => void;
   setSelectedPlayer: (player: IPlayer | null) => void;
+  createPlayer: (player: IPlayer) => void;
+  updatePlayer: (player: IPlayer) => void;
+  deletePlayer: (id: string) => void;
 }
 
 const PlayerDashboard: React.FC<IProps> = (props) => {
-  const {players, selectPlayer, selectedPlayer, editMode, setEditMode, setSelectedPlayer} = props;
+  const {players, selectPlayer, selectedPlayer, editMode, setEditMode, setSelectedPlayer, createPlayer, updatePlayer, deletePlayer} = props;
 
   return (
     <Grid>
       <Grid.Column width={10}>
-        <PlayerList players={players} selectPlayer={selectPlayer} setEditMode={setEditMode} />
+        <PlayerList players={players} 
+                    selectPlayer={selectPlayer} 
+                    setEditMode={setEditMode}
+                    deletePlayer={deletePlayer} />
       </Grid.Column>
       <Grid.Column width={6}>
         {
@@ -31,7 +38,11 @@ const PlayerDashboard: React.FC<IProps> = (props) => {
             setSelectedPlayer={setSelectedPlayer} />
         }
         {
-          (editMode) && <PlayerForm setEditMode={setEditMode} player={selectedPlayer!} />
+          (editMode) && <PlayerForm key={(selectedPlayer && selectedPlayer.id) || 0}
+                                    setEditMode={setEditMode} 
+                                    player={selectedPlayer!} 
+                                    createPlayer={createPlayer} 
+                                    updatePlayer={updatePlayer} />
         }
       </Grid.Column>
     </Grid>

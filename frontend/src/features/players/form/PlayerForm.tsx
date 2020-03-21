@@ -1,14 +1,17 @@
-import React, {useState, ChangeEvent} from 'react'
+import React, {useState, ChangeEvent, FormEvent} from 'react'
 import { Form, Segment, Button } from 'semantic-ui-react'
 import { IPlayer } from '../../../models/player';
+import {v4 as uuid} from 'uuid';
 
 interface IProps {
   setEditMode: (editMode: boolean) => void;
   player: IPlayer;
+  createPlayer: (player: IPlayer) => void;
+  updatePlayer: (player: IPlayer) => void;
 }
 
 const PlayerForm: React.FC<IProps> = (props) => {
-  const {setEditMode, player: initPlayer} = props;
+  const {setEditMode, player: initPlayer, createPlayer, updatePlayer} = props;
 
   const initialiseForm = () => {
     if(initPlayer) {
@@ -33,9 +36,19 @@ const PlayerForm: React.FC<IProps> = (props) => {
 
   const [player, setPlayer] = useState<IPlayer>(initialiseForm);
 
-  const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
-    const {name, value} = event.target;
-    console.log(event.target.value);
+  const handleFormSubmit = () => {
+    if(player.id.length == 0) {
+      let newPlayer = {...player, id: uuid()};
+      // setPlayer({...player, id: uuid()});
+
+      createPlayer(player);
+    }
+    else {
+      updatePlayer(player);
+    }
+  }
+  const handleInputChange = (event: FormEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const {name, value} = event.currentTarget;
     setPlayer({...player, [name]: value})
   }
 
@@ -51,10 +64,10 @@ const PlayerForm: React.FC<IProps> = (props) => {
         <Form.Input onChange={handleInputChange} placeholder='Tackels' name='tackles' value={player.tackles} />
         <Form.Input onChange={handleInputChange} placeholder='Yellow Cards' name='yellowCards' value={player.yellowCards} />
         <Form.Input onChange={handleInputChange} placeholder='Red Cards' name='redCards' value={player.redCards} />
-        <Form.Input onChange={handleInputChange} placeholder='Debut Date' name='debutDate' value={player.debutDate} />
+        <Form.Input onChange={handleInputChange} placeholder='Debut Date' type='datetime-local' name='debutDate' value={player.debutDate} />
         <Form.Input onChange={handleInputChange} placeholder='Club' name='club' value={player.club} />
         <Button.Group widths={2}>
-          <Button onClick={() => setEditMode(false)} floated='right' positive type='submit' color='olive' content='Submit' />
+          <Button onClick={() => {setEditMode(false); handleFormSubmit()}} floated='right' positive type='submit' color='olive' content='Submit' />
           <Button onClick={() => setEditMode(false)} floated='right' type='button' color='grey' content='Cancel' />
         </Button.Group>
       </Form>
