@@ -1,10 +1,10 @@
 import React, {useState, useEffect, Fragment} from 'react';
 import { Container } from 'semantic-ui-react'
 import './styles.css';
-import axios from 'axios';
 import { IPlayer } from '../../models/player';
 import { NavBar } from '../../features/nav/NavBar';
 import PlayerDashboard from '../../features/players/dashboard/PlayerDashboard';
+import apiAxios from '../api/apiAxios';
 
 const App = () => {
 
@@ -23,30 +23,38 @@ const App = () => {
   }
 
   const handleAPICreatePlayer = (player: IPlayer) => {
-    setPlayers([...players, player]);
-    setSelectedPlayer(player);
-    setEditMode(false);
+    console.log("create: ", player);
+    apiAxios.players.create(player).then(() => {
+      setPlayers([...players, player]);
+      setSelectedPlayer(player);
+      setEditMode(false);
+    })
   }
 
-  const handleAPIUpdatePlayer = (player: IPlayer) => {
-    setPlayers([...players.filter(x => x.id !== player.id), player]);
-    setSelectedPlayer(player);
-    setEditMode(false);
+  const handleAPIUpdatePlayer = (player: IPlayer) => {  
+    apiAxios.players.update(player).then(() => {
+      setPlayers([...players.filter(x => x.id !== player.id), player]);
+      setSelectedPlayer(player);
+      setEditMode(false);
+    })
   }
 
   const handleAPIDeletePlayer = (id: string) => {
-    setPlayers([...players.filter(x => x.id !== id)])
+    apiAxios.players.delete(id).then(() => {
+      setPlayers([...players.filter(x => x.id !== id)])
+    })
   }
 
   useEffect(() => {
-    axios.get<IPlayer[]>('http://localhost:5000/api/players')
+    // axios.get<IPlayer[]>('http://localhost:5000/api/players')
+    apiAxios.players.all()
       .then(res => {
         let players: IPlayer[] = [];
-        res.data.forEach(player => {
+        res.forEach((player) => {
           player.debutDate = player.debutDate.split('.')[0];
           players.push(player);
         })
-        setPlayers(res.data)
+        setPlayers(res)
       })
   }, []);
 

@@ -41,7 +41,7 @@ const PlayerForm: React.FC<IProps> = (props) => {
       let newPlayer = {...player, id: uuid()};
       // setPlayer({...player, id: uuid()});
 
-      createPlayer(player);
+      createPlayer(newPlayer);
     }
     else {
       updatePlayer(player);
@@ -54,7 +54,7 @@ const PlayerForm: React.FC<IProps> = (props) => {
 
   return (
     <Segment>
-      <Form clearing>
+      <Form>
         <Form.Input onChange={handleInputChange} placeholder='Name' name='name' value={player.name} />
         <Form.Input onChange={handleInputChange} placeholder='Back Number' name='backNumber' value={player.backNumber} />
         <Form.Input onChange={handleInputChange} placeholder='Position' name='position' value={player.position} />
